@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryptor</title>
+</head>
+<body>
+    <main class="main">
+        <div class="text__area">
+            <input type="text" name="text-area-input" class="text__area__input" value="Enter text here" onclick="input_dissapear (input);">
+            <div class="text__area__output" >
+                <div class="text__area__output__show" style="display: block;">
+                    <img src="assets/image.png" alt="boy with a lupe">
+                    <p class="text__area__output__p">No message was found</p>
+                    <p class="text__area__output__p2">Enter the text you want to encrypt or decrypt.</p>
+                </div>
+                <div class="text__area__output__hide" style="display: none;">
+                    <p class="text__area__output__hide__p">Text output</p>
+                    <button class="text__area__output__hide__button">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="warning">
+            <img src="assets/icon.png" alt="exclamation mark">
+            <p>Only lowercase letters are allowed</p>
+        </div>
+        <div class="buttons__area">
+            <button class="buttons__area__encrypt" onclick="encrypt (input);">Encrypt</button>
+            <button class="buttons__area__decrypt" onclick="decrypt (input);">Decrypt</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text"> 2024. All rights reserved.</p>
+        <div class="contact__information">
+            <p class="contact__information__text">Contact Information</p>
+            <a class="contact__information__lk" href="#"> LinkedIn</a>  
+            <a class="contact__information__gh" href="#"> Github</a>    
+        </div>
+        <p class="footer__p">Developed by Camila Amaya</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
