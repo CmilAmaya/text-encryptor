@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Encryptor</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="assets/favicon.png">
 </head>
-<body>
+<body> 
     <main class="main">
         <div class="text__area">
-            <input type="text" name="text-area-input" class="text__area__input" value="Enter text here" onclick="input_dissapear (input);">
+            <div class="text__area__general">
+                <textarea name="text-area-input" class="text__area__input" placeholder="Enter your text here..." ></textarea>
+                <div class="warning">
+                    <img class="warning__img" src="assets/icon.png" alt="exclamation mark">
+                    <p>Only lowercase letters are allowed</p>
+                </div>
+                <div class="buttons__area">
+                    <button class="buttons__area__encrypt" onclick="encrypt (input);">Encrypt</button>
+                    <button class="buttons__area__decrypt" onclick="decrypt (input);">Decrypt</button>
+                </div>
+            </div>
             <div class="text__area__output" >
                 <div class="text__area__output__show" style="display: block;">
-                    <img src="assets/image.png" alt="boy with a lupe">
+                    <img class="text__area__output__show__img" src="assets/image.png" alt="boy with a lupe">
                     <p class="text__area__output__p">No message was found</p>
-                    <p class="text__area__output__p2">Enter the text you want to encrypt or decrypt.</p>
+                    <p class="text__area__output__p2">Enter the text you want <br> to encrypt or decrypt.</p>
                 </div>
                 <div class="text__area__output__hide" style="display: none;">
-                    <p class="text__area__output__hide__p">Text output</p>
-                    <button class="text__area__output__hide__button">Copy</button>
+                    <p class="text__area__output__hide__p"></p>
+                    <button class="text__area__output__hide__button" onclick="copy()">Copy</button>
                 </div>
             </div>
         </div>
-        <div class="warning">
-            <img src="assets/icon.png" alt="exclamation mark">
-            <p>Only lowercase letters are allowed</p>
-        </div>
-        <div class="buttons__area">
-            <button class="buttons__area__encrypt" onclick="encrypt (input);">Encrypt</button>
-            <button class="buttons__area__decrypt" onclick="decrypt (input);">Decrypt</button>
-        </div>
+        
     </main>
     <footer class="footer">
         <p class="footer__text"> 2024. All rights reserved.</p>
         <div class="contact__information">
             <p class="contact__information__text">Contact Information</p>
-            <a class="contact__information__lk" href="#"> LinkedIn</a>  
-            <a class="contact__information__gh" href="#"> Github</a>    
+            <a class="contact__information__lk" href="https://www.linkedin.com/in/mar%C3%ADa-camila-amaya-rodr%C3%ADguez/" target="_blank">LinkedIn</a>  
+            <a class="contact__information__gh" href="https://github.com/CmilAmaya" target="_blank">Github</a>    
         </div>
-        <p class="footer__p">Developed by Camila Amaya</p>
+        <p class="footer__p">Developed by <br> Camila Amaya</p>
     </footer>
     <script src="app.js"></script>
 </body>
