@@ -60,3 +60,9 @@ function copy() {
     });
 }
 
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    document.querySelector('.icon-sun').style.display = isDarkMode ? 'none' : 'block';
+    document.querySelector('.icon-moon').style.display = isDarkMode ? 'block' : 'none';
+  }

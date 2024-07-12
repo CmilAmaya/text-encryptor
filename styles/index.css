@@ -3,10 +3,46 @@
 :root {
     --primary-color: #0A3871;
     --secondary-color: #343A40;
-    --tertiary-color: #F3F5FC; 
+    --tertiary-color: #ffffff; 
+    --quaternary-color: white;
 
     --inter-font: "Inter", sans-serif; 
 }
+
+body.dark-mode {
+    --primary-color: #BB86FC; 
+    --secondary-color: white; 
+    --tertiary-color: #39448e;
+    --quaternary-color: #2c285c;
+}
+
+body.dark-mode .warning__img {
+    filter: invert(100%);
+}
+
+body.dark-mode .text__area__input::placeholder,
+body.dark-mode .text__area__input,
+body.dark-mode .text__area__output__hide__p{
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+#toggleDarkMode {
+    margin-left: auto; 
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+.icon-sun, .icon-moon {
+    transition: all 0.3s ease;
+}
+  
 
 * {
     padding: 0;
@@ -35,18 +71,18 @@ html, body {
     height: 1.875rem;
     min-width: 30px;
     font-size: 1rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-left: 1rem;
     margin-right: 1rem;
     border: 1px solid var(--primary-color);
     background-color: var(--tertiary-color);
-    color: #0A3871;
+    color: var(--primary-color);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .input__area__clear:hover {
-    color: white;
+    color: var(--quaternary-color);
     background-color: var(--primary-color);
 }
 
@@ -58,7 +94,7 @@ html, body {
 }
 
 .text__area__input {
-    margin-top: 5rem; 
+    margin-top: 4rem; 
     border: none;
     outline: none; 
     resize: none; 
@@ -83,7 +119,7 @@ html, body {
     margin-right: 9.375rem; 
     min-width: 25rem; 
     min-height: 29.375rem;   
-    background-color: white;
+    background-color: var(--quaternary-color);
     border-radius: 1.875rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.26);
     color: var(--secondary-color);
@@ -133,7 +169,7 @@ html, body {
     border: none;
     border-radius: 0.625rem;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--quaternary-color);
     font-family: var(--inter-font);
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.63);
     cursor: pointer;
@@ -158,7 +194,7 @@ html, body {
 }
 
 .buttons__area__decrypt:hover{
-    color: white;
+    color: var(--quaternary-color);
     background-color: var(--primary-color);
 }
 
@@ -185,15 +221,15 @@ html, body {
     height: 1.875rem;
     border: 0.0625rem solid var(--primary-color);
     border-radius: 0.625rem;
-    background-color: white;
+    background-color: var(--quaternary-color);
     font-family: var(--inter-font);
-    color: #0A3871;
+    color: var(--primary-color);
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.36);
     cursor: pointer;
 }
 
 .text__area__output__hide__button:hover{
-    color: white;
+    color: var(--quaternary-color);
     background-color: var(--primary-color);
 }
 
@@ -217,7 +253,7 @@ html, body {
 .contact__information__lk:hover,
 .contact__information__gh:hover {
     padding-left: 0.625rem;
-    color: white;
+    color: var(--quaternary-color);
     text-decoration: underline;
 }
 
@@ -279,9 +315,9 @@ html, body {
         height: 1.875rem;
         border: 0.0625rem solid var(--primary-color);
         border-radius: 0.625rem;
-        background-color: white;
+        background-color: var(--quaternary-color);
         font-family: var(--inter-font);
-        color: #0A3871;
+        color: var(--primary-color);
         box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.36);
     }
 
@@ -355,9 +391,9 @@ html, body {
         height: 1.875rem;
         border: 0.0625rem solid var(--primary-color);
         border-radius: 0.625rem;
-        background-color: white;
+        background-color: var(--quaternary-color);
         font-family: var(--inter-font);
-        color: #0A3871;
+        color: var(--primary-color);
         box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.36);
     }
 
