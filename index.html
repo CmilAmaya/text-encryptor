@@ -6,12 +6,18 @@
     <title>Text Encryptor</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body> 
     <main class="main">
         <div class="text__area">
             <div class="text__area__general">
-                <textarea name="text-area-input" class="text__area__input" placeholder="Enter your text here..." ></textarea>
+                <div class="input__area">
+                    <textarea name="text-area-input" class="text__area__input" placeholder="Enter your text here..."></textarea>
+                    <button class="input__area__clear" onclick="clearInput()">
+                        <i class="fas fa-undo-alt"></i>
+                    </button>
+                </div>
                 <div class="warning">
                     <img class="warning__img" src="assets/icon.png" alt="exclamation mark">
                     <p>Only lowercase letters are allowed</p>

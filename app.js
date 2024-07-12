@@ -1,5 +1,10 @@
 let input = document.querySelector('.text__area__input');
 
+function clearInput() {
+    input.value = '';
+    input.focus();
+}
+
 
 function encrypt (input) {
     let output = input.value.trim();
@@ -7,6 +12,7 @@ function encrypt (input) {
     if (output == "" ){
         document.querySelector('.text__area__output__hide').style.display = 'none';
         document.querySelector('.text__area__output__show').style.display = 'block';
+        input.focus();
     } else {
         output = output.replace(/e/g, 'enter');
         output = output.replace(/i/g, 'imes');
@@ -27,6 +33,7 @@ function decrypt (input) {
     if (output == "") {
         document.querySelector('.text__area__output__hide').style.display = 'none';
         document.querySelector('.text__area__output__show').style.display = 'block';
+        input.focus();
     } else {
         output = output.replace(/enter/g, "e");
         output = output.replace(/imes/g, "i");
@@ -46,7 +53,6 @@ function decrypt (input) {
 
 function copy() {
     let copyText = document.querySelector('.text__area__output__hide__p').innerHTML;
-    console.log(copyText);
     navigator.clipboard.writeText(copyText).then(function (){
         document.querySelector('.text__area__output__hide__button').innerHTML = 'Copied!';
     }).catch(function(err){
