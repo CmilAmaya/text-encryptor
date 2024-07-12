@@ -31,8 +31,9 @@ html, body {
 }
 
 .input__area__clear {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
+    font-size: 1rem;
     margin-top: 5rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -220,6 +221,12 @@ html, body {
 }
 
 @media (min-width: 614px) and (max-width: 1270px){
+
+    .input__area__clear {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+    }
     
     .text__area {
         flex-direction: column;
@@ -278,6 +285,12 @@ html, body {
 }
 
 @media (max-width: 613px){
+
+    .input__area__clear {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.8rem;
+    }
 
     .text__area {
         flex-direction: column;
