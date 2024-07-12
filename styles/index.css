@@ -33,6 +33,7 @@ html, body {
 .input__area__clear {
     width: 1.875rem;
     height: 1.875rem;
+    min-width: 30px;
     font-size: 1rem;
     margin-top: 5rem;
     margin-left: 1rem;
@@ -226,6 +227,8 @@ html, body {
         width: 1.5rem;
         height: 1.5rem;
         font-size: 0.8rem;
+        min-width: 30px !important;
+        min-height: 30px !important;
     }
     
     .text__area {
@@ -290,6 +293,9 @@ html, body {
         width: 1.5rem;
         height: 1.5rem;
         font-size: 0.8rem;
+        min-width: 30px !important;
+        min-height: 30px !important;
+        
     }
 
     .text__area {
