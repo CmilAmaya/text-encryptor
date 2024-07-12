@@ -28,7 +28,7 @@ Text Encryptor is a web-based tool designed for simple and efficient encryption 
   ![](assets/nv4.png)
 
 ## Installation
-No installation required. Access [Project URL] to start using Text Encryptor.
+No installation required. Access [Project URL](https://github.com/CmilAmaya/text-encryptor.git) to start using Text Encryptor.
 
 ## Contributing
 If you're interested in contributing to this project, please follow these steps:
