@@ -19,6 +19,14 @@ Text Encryptor is a web-based tool designed for simple and efficient encryption 
 2. **Decrypt Text**: To decrypt, enter the encrypted text in the text area and click the "Decrypt" button. The decrypted text will be displayed in the output area.
 3. **Copy to Clipboard**: Click the "Copy" button to copy the encrypted/decrypted text to the clipboard.
 
+## How it looks
+- Light mode
+  ![](assets/nv1.png)
+  ![](assets/nv2.png)
+- Dark mode
+- ![](assets/nv3.png)
+  ![](assets/nv4.png)
+
 ## Installation
 No installation required. Access [Project URL] to start using Text Encryptor.
 
