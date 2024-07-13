@@ -3,7 +3,7 @@
 :root {
     --primary-color: #0A3871;
     --secondary-color: #343A40;
-    --tertiary-color: #ffffff; 
+    --tertiary-color: #F3F5FC; 
     --quaternary-color: white;
 
     --inter-font: "Inter", sans-serif; 
@@ -24,6 +24,11 @@ body.dark-mode .text__area__input::placeholder,
 body.dark-mode .text__area__input,
 body.dark-mode .text__area__output__hide__p{
     color: #ffffff;
+}
+
+body.dark-mode .buttons__area__decrypt,
+body.dark-mode .buttons__area__encrypt {
+    font-weight: 500;
 }
 
 .header {

@@ -1,9 +1,5 @@
 let input = document.querySelector('.text__area__input');
-
-function clearInput() {
-    input.value = '';
-    input.focus();
-}
+let output_p = document.querySelector('.text__area__output__hide__p');
 
 
 function encrypt (input) {
@@ -46,9 +42,13 @@ function decrypt (input) {
         document.querySelector('.text__area__output__hide__p').innerHTML = output;
         document.querySelector('.text__area__output__hide__button').innerHTML = 'Copy';
     }
+}
 
-    
-
+function clearInput() {
+    input.value = '';
+    document.querySelector('.text__area__output__hide').style.display = 'none';
+    document.querySelector('.text__area__output__show').style.display = 'block';
+    input.focus();
 }
 
 function copy() {
