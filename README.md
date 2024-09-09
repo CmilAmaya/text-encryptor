@@ -38,7 +38,7 @@ If you're interested in contributing to this project, please follow these steps:
 4. Submit a pull request.
 
 ## License
-This project is licensed under the MIT License. For more details, see the LICENSE file.
+This project is licensed under the MIT License. 
 
 ## Contact
 If you have any questions or suggestions, feel free to contact me via [LinkedIn](https://www.linkedin.com/in/mar%C3%ADa-camila-amaya-rodr%C3%ADguez/) or [GitHub](https://github.com/CmilAmaya).
